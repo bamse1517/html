@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레드향</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul>
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user-name" autofocus>
+                    </li>
+
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="addr">
+                    </li>
+
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </li>
+
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요. (01012345678)">
+                    </li>
+                    
+                    <li>
+                        배송 지정 <input type="date">(주문일로부터 최소 3일 이후)
+                    </li>
+                </ul>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul>
+
+                    <li>
+                        <label for="prod">주문 상품</label>
+                        <input type="text" id="prod" value="주문용 3kg" readonly>
+                    </li>
+
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user-name" required>
+                    </li>
+
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="addr" required>
+                    </li>
+
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </li>
+
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요. (01012345678)">
+                    </li>
+                    
+                    <li>
+                        배송 지정 <input type="date">(주문일로부터 최소 3일 이후)
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레드향</title>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" autofocus>
+                </li>
+
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr">
+                </li>
+
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail">
+                </li>
+
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요. (01012345678)">
+                </li>
+                
+                <li>
+                    배송 지정 <input type="date">(주문일로부터 최소 3일 이후)
+                </li>
+
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea id="memo" cols="40" rows="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <br><br>
+
+        <label for="prod1">상품 선택</label>
+        <select id="prod1">
+            <option value="special_3" selected>선물용 3kg</option>
+            <option value="special_5" >선물용 5kg</option>
+            <option value="family_3" >가정용 3kg</option>
+            <option value="family_5" >가정용 5kg</option>
+        </select>
+        
+        <br><br>
+        <label for="prod2">포장 여부</label>
+        <input type="text" id="prod2" list="pack">
+        <datalist id="pack">
+            <option value="package">선물 포장</option>
+            <option value="un_package">포장 안 함</option>
+        </datalist>
+    </body>
+</html>
