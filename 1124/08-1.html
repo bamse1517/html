@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS와 박스 모델</title>
+        <style>
+            h1 {
+                border: 1px solid  blue;
+            }
+
+            #container {
+                border: 1px solid blue;
+            }
+
+            .accent {
+                color: red;
+                border: 1px solid blue;
+            }
+
+            p {
+                border: 1px solid blue;
+            }
+
+            #box1 {
+                width: 400px;
+                height: 100px;
+                box-shadow: 2px -2px 5px 0px;
+                border-radius: 25px;
+            }
+
+            #box2 {
+                width: 50%;
+                height: 100px;
+                box-shadow: 5px 5px 15px 5px blue;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <h1>시간이란..</h1>
+        <div id="container">내일 죽을 것처럼 <span class="accent">오늘</span>을 살고</div>
+        <p>영원히 살 것처럼 <br>내일을 꿈꾸어라.</p>
+
+        <br><br>
+
+        <div id="box1"></div>
+        <br><br>
+        <div id="box2"></div>
+    </body>
+</html>
