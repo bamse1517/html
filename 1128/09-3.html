@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>그라데이션</title>
+        <style>
+
+            div {
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                display: inline-block;
+                margin: auto;
+                border: 1px solid;
+            }
+
+            /* 방향을 사용해 선형 그라데이션 만들기 */
+
+            .grad1 {
+                background: blue;
+                background: linear-gradient(to right bottom, blue, white);
+            }
+
+            /* 각도를 사용해 선형 그라데이션 만들기 */
+            .grad2 {
+                background: red;
+                background: linear-gradient(45deg, #f00, #fff);
+            }
+            
+            /* 선형 그라데이션의 색상 중지점 지정하기 */
+            .grad3 {
+                background: blue;
+                background: linear-gradient(to bottom, #06f, white 30%, #06f);
+            }
+
+            /* 원형 그라데이션의 모양 */
+            .grad4 {
+                background: radial-gradient(white, yellow, red);
+            }
+
+            .grad5 {
+                background: radial-gradient(circle, white, yellow, red);
+            }
+
+            /* 원현 그라데이션의 색상 중지점 지정하기 */
+            .grad7 {
+                background: radial-gradient(yellow, white, orange);
+            }
+
+            .grad8 {
+                background: radial-gradient(yellow, white 10%, orange 60%);
+            }
+
+            /* 그라데이션 반복하기 */
+            .grad9 {
+                background: repeating-linear-gradient(yellow, red 20px);
+            }
+
+            .grad10 {
+                background: repeating-radial-gradient(circle, white, #ccc 10%);
+            }
+
+            /* 그라데이션을 사용해 패턴 만들기 */
+            .grad11 {
+                background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+            }
+
+            .grad12 {
+                background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="grad1"></div>
+        
+        <div class="grad2"></div>
+
+        <div class="grad3"></div>
+
+        <br><br>
+
+        <div class="grad4"></div>
+
+        <div class="grad5"></div>
+
+
+        <br><br>
+
+        <div class="grad7"></div>
+
+        <div class="grad8"></div>
+    
+        <br><br>
+
+        <div class="grad9"></div>
+
+        <div class="grad10"></div>
+
+        <br><br>
+
+        <div class="grad11"></div>
+
+        <div class="grad12"></div>
+
+    </body>
+</html>
