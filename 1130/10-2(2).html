@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>속성 선택자 3</title>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+
+            li {
+                display: inline-block;
+            }
+
+            li a {
+                margin: 10px;
+                font-size: 14px;
+                padding: 2px 5px;
+                color: blue;
+                text-decoration: none;
+            }
+
+            .flat {
+                background: #eee;
+                border: 1px solid #222;
+            }
+
+            [class ~= button] {
+                box-shadow: rgb(0, 0, 0, 0.4) 4px 4px;
+                border-radius: 5px;
+                border: 1px solid #222;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <ul>
+            <li><a href="#" class="flat">메뉴 1</a></li>
+            <li><a href="#" class="flat">메뉴 2</a></li>
+            <li><a href="#" class="button">메뉴 3</a></li>
+            <li><a href="#" class="flat button">메뉴 4</a></li>
+        </ul>
+    </body>
+</html>
