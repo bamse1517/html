@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>속성 선택자 6</title>
+        <style>
+            li {
+                list-style-type: square;
+            }
+
+            a[href $= hwp] {
+                background: url('images/hwp_icon.gif') no-repeat right center;
+                padding-right: 25px;
+            }
+
+            a[href $= xls] {
+                background: url('images/excel_icon.gif') no-repeat right center;
+                padding-right: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>회사 소개 파일 내려받기</h3>
+        <ul>
+            <li><a href="intro.hwp">hwp 파일</a></li>
+            <li><a href="intro.xls">엑셀 파일</a></li>
+        </ul>
+    </body>
+</html>

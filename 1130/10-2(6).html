@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>속성 선택자 7</title>
+        <style>
+            ul {
+                list-style-type: circle;
+            }
+            
+            li {
+                padding: 3px 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a[href *= w3] {
+                background: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2>HTML5 참고 사이트</h2>
+        <p>(아래 링크 중에서 배경색이 파란색인 링크는 W3C 사이트로 연결됩니다.)</p>
+        <ul>
+            <li><a href="https://html.spec.whatwg.org">HTML 표준안 사이트</a></li>
+            <li><a href="https://caniuse.com">HTML 지원 여부 채크</a></li>
+            <li><a href="https://www.w3.org/TR/css3-mediaqueries">미디터 쿼리</a></li>
+        </ul>
+    </body>
+</html>
