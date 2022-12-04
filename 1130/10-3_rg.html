@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+        <style>
+        #container {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .navi {
+            width: 960px;
+            height: 60px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .navi ul {
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        
+        .navi ul li {
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+        }        
+
+        .navi a:link, .navi a:visited {
+            font-size: 14px;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+        .navi a:hover, .navi a:focus {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navi a:active {
+            background-color: #f00;
+        }
+
+        #signup {
+            width: 400px;
+            border: 1px solid #222;
+            border-radius: 5px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        #signup ul li{
+            list-style-type: none;
+            line-height: 30px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+        }
+
+        #signup fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+        }
+
+        #sginup legend {
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-bottom: 10px;
+        }
+
+        #signup fieldset:first-of-type label {
+            float: left;
+            font-size: 13px;
+            width: 60px;
+        }
+
+        #signup input:not([type=radio]) {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        #signup input:not([type=radio]):hover {
+            border-color: #f00;
+        }
+
+        #signup button {
+            border: 1px solid #222;
+            border-radius: 20px;
+            display: block;
+            font: 16px 맑은고딕,굴림,돋음;
+            letter-spacing: 1px;
+            margin: auto;
+            padding: 7px 25px;
+        }
+
+        #signup b {
+            float: left;
+            font-size: 13px;
+            width: 110px;
+        }
+
+        #signup input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <nav class="navi">
+                <ul>
+                    <li><a href="10-3.html#intro">이용 안내</a></li>
+                    <li><a href="10-3.html#room">객실 소개</a></li>
+                    <li><a href="10-3.html#reservayion">예약 방법 및 요금</a></li>
+                    <li><a href="#signup">예약하기</a></li>
+                </ul>
+            </nav>
+
+            <form id="signup">
+                <fieldset>
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="name">이름</label>
+                            <input type="text" name="name" id="name">
+                        </li>
+
+                        <li>
+                            <label for="phone">연락처</label>
+                            <input type="tel" name="phone" id="phone">
+                        </li>
+                    </ul>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>객실 형태</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="room" id="basic">
+                            <label for="basic">기본형 (최대 2인)</label>
+                        </li>
+    
+                        <li>
+                            <input type="radio" name="room" id="family">
+                            <label for="family">가족형 (최대 8인)</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">제출</button>
+            </form>
+        </div>
+    </body>
+</html>
