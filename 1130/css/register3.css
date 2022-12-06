@@ -73,7 +73,16 @@ body {
   margin-bottom:0;  /* 아래쪽 마진 없앰 */
 }
 
-/* #signup button:hover {  /* #singup 하위에 있는 버튼에 마우스 올렸을 때 스타일 */
+ #signup button:hover {  /* #singup 하위에 있는 버튼에 마우스 올렸을 때 스타일 */
   background-color:#222;  /* 배경색 - 검정 계열색 */
   color:#fff;  /* 글자색 - 흰색 */
-} */
+} 
+
+#signup input[type=text], #signup input[type=password],
+#signup input[type=tel], #signup input[type=email] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font: 13px;
+	padding: 5px;
+	width: 200px;
+} 
