@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>변형 알아보기 3</title>
+        <style>
+            #container {
+                width: 800px;
+                height: 200px;
+                margin: 20px auto;
+            }
+
+            .origin {
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+                float: left;
+                margin: 40px;
+                padding-bottom: 30px;
+            }
+
+            .rotatex {
+                transform: rotateX(50deg);
+            }
+
+            #pers {
+                perspective: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="origin">
+                <div class="rotatex">
+                    <img src="images/sunset.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="origin" id="pers">
+                <div class="rotatex">
+                    <img src="images/sunset.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
