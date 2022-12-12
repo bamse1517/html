@@ -7,7 +7,7 @@
         <title>플렉스 항목 배치하기</title>
         <style>
             .container {
-                width: 700px;
+                width: 800px;
                 display: flex;
                 background-color: #eee;
                 margin-bottom: 30px;
@@ -27,20 +27,16 @@
             }
 
             #opt1 {
-                flex-direction: row;
+                flex-wrap: nowrap;
             }
 
             #opt2 {
-                flex-direction: row-reverse;
+                flex-wrap: wrap;
             }
 
 
             #opt3 {
-                flex-direction: column;
-            }
-
-            #opt4 {
-                flex-direction: column-reverse;
+                flex-wrap: wrap-reverse;
             }
         </style>
     </head>
@@ -58,6 +54,18 @@
             <div class="box">
                 <p>3</p>
             </div>
+
+            <div class="box">
+                <p>4</p>
+            </div>
+
+            <div class="box">
+                <p>5</p>
+            </div>
+
+            <div class="box">
+                <p>6</p>
+            </div>
         </div>
 
         <div class="container" id="opt2">
@@ -71,6 +79,18 @@
 
             <div class="box">
                 <p>3</p>
+            </div>
+
+            <div class="box">
+                <p>4</p>
+            </div>
+
+            <div class="box">
+                <p>5</p>
+            </div>
+
+            <div class="box">
+                <p>6</p>
             </div>
         </div>
 
@@ -86,19 +106,17 @@
             <div class="box">
                 <p>3</p>
             </div>
-        </div>
 
-        <div class="container" id="opt4">
             <div class="box">
-                <p>1</p>
+                <p>4</p>
             </div>
 
             <div class="box">
-                <p>2</p>
+                <p>5</p>
             </div>
 
             <div class="box">
-                <p>3</p>
+                <p>6</p>
             </div>
         </div>
     </body>
