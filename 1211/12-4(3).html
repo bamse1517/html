@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>플렉스 항목 배치하기 1</title>
+        <title>플렉스 항목 배치하기 4</title>
         <style>
             .container {
-                width: 700px;
+                width: 1000px;
                 display: flex;
                 background-color: #eee;
                 margin-bottom: 30px;
@@ -27,20 +27,23 @@
             }
 
             #opt1 {
-                flex-direction: row;
+                justify-content: flex-start;
             }
 
             #opt2 {
-                flex-direction: row-reverse;
+                justify-content: flex-end;
             }
 
-
             #opt3 {
-                flex-direction: column;
+                justify-content: center;
             }
 
             #opt4 {
-                flex-direction: column-reverse;
+                justify-content: space-between;
+            }
+
+            #opt5 {
+                justify-content: space-around;
             }
         </style>
     </head>
@@ -58,6 +61,10 @@
             <div class="box">
                 <p>3</p>
             </div>
+
+            <div class="box">
+                <p>4</p>
+            </div>
         </div>
 
         <div class="container" id="opt2">
@@ -71,6 +78,10 @@
 
             <div class="box">
                 <p>3</p>
+            </div>
+
+            <div class="box">
+                <p>4</p>
             </div>
         </div>
 
@@ -86,6 +97,10 @@
             <div class="box">
                 <p>3</p>
             </div>
+
+            <div class="box">
+                <p>4</p>
+            </div>
         </div>
 
         <div class="container" id="opt4">
@@ -99,6 +114,28 @@
 
             <div class="box">
                 <p>3</p>
+            </div>
+
+            <div class="box">
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="container" id="opt5">
+            <div class="box">
+                <p>1</p>
+            </div>
+
+            <div class="box">
+                <p>2</p>
+            </div>
+
+            <div class="box">
+                <p>3</p>
+            </div>
+
+            <div class="box">
+                <p>4</p>
             </div>
         </div>
     </body>
