@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css 그리드 레이아웃 사용하기 1</title>
+        <style>
+            #wrapper {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-auto-rows: 100px;
+            }
+
+            .items {
+                padding: 10px;
+                background-color: #eee;
+            }
+
+            .items:nth-child(odd) {
+                background-color: #bbb;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <div class="items">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem, ipsum dolor.
+            </div>
+        </div>
+    </body>
+</html>

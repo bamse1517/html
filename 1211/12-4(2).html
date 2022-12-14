@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css 그리드 레이아웃 사용하기 2</title>
+        <style>
+            #wrapper1 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                margin-bottom: 20px;
+            }
+
+            #wrapper2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .items {
+                padding: 10px;
+                background-color: #eee;
+            }
+
+            .items:nth-child(odd) {
+                background-color: #bbb;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="wrapper1">
+            <div class="items">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem, ipsum dolor.
+            </div>
+        </div>
+
+        <div id="wrapper2">
+            <div class="items">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            </div>
+
+            <div class="items">
+                Lorem, ipsum dolor.
+            </div>
+        </div>
+    </body>
+</html>
