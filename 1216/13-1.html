@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>내부 자바스크립트 사용하기</title>
+        <style>
+            #container {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #heading {
+                font-size: 45px;
+                color: blue;
+            }
+
+            #text {
+                color: #aaa;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1 id="heading">자바스크립트</h1>
+            <p id="text">위 텍스트를 클릭해 보세요</p>
+            
+            <script>
+                var heading = document.querySelector('#heading')
+                heading.onclick = function() {
+                    heading.style.color = "red";
+                }
+            </script>
+        </div>
+    </body>
+</html>
