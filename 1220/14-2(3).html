@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OR 연산자를 사용해 조건 체크하기</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var numberOne = prompt("50미만의 숫자를 입력하세요. (첫번째)")
+            var numberTwo = prompt("50미만의 숫자를 입력하세요. (두번째)")
+            
+            if(numberOne < 10 || numberTwo < 10)
+                alert("숫자 2개 중에서 최소한 하나는 10 미만입니다.");
+            else
+                alert("숫자 2개 중에서 10 미만인 수가 없습니다.")
+        </script>
+    </body>
+</html>
