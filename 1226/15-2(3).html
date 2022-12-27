@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>변수와 호이스팅</title>
+        <style>
+
+        </style>
+    </head>
+    
+    <body>
+        <script>
+            function addNumber(num1, num2) {
+                return num1 + num2;
+            }
+            var sum = addNumber (10, 20);
+            console.log(sum);
+            sum = 50;
+            console.log(sum);
+            var sum = 100;
+            console.log(sum);
+        </script>
+    </body>
+</html>

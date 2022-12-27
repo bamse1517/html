@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>변수와 호이스팅</title>
+        <style>
+
+        </style>
+    </head>
+    
+    <body>
+        <script>
+            var x = 10;
+
+            function displayNumber() {
+                console.log("x is " + x);
+                console.log("y is " + y);
+                var y = 20;
+            }
+            displayNumber();
+        </script>
+    </body>
+</html>
