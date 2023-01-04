@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연습문제 2</title>
+        <style>
+
+        </style>
+    </head>
+    
+    <body>
+        <script>
+            var num1 = prompt("비교할 첫번째 숫자 : ")
+            var num2 = prompt("비교할 두번째 숫자 : ")
+
+            sizeComparion(num1, num2)
+
+            function sizeComparion(x, y) {
+                if(num1 > num2) {
+                    alert(x + "(이)가 " + y + "보다 큽니다.")
+                }
+                if(num1 === num2) {
+                    alert(x + "와(과) " + y + "는 같습니다.")
+                }
+                else {
+                    alert(y + "(이)가 " + x + "보다 큽니다.")
+                }
+            }
+        </script>
+    </body>
+</html>
